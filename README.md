@@ -87,6 +87,8 @@ https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esearch.fcgi?db=pubmed&retmode=jso
 }
 ```
 
+___
+
 ## ESummary
 
 La utilidad ESummary nos permite obtener la metadata de los artículos a través de los PubMed ids obtenidos previamente con la utilidad ESearch.
@@ -178,6 +180,8 @@ https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esummary.fcgi?db=pubmed&retmode=js
 }
 ```
 
+___
+
 ## EFetch
 
 La utilidad EFetch nos permite obtener información más relevante de uno o más PubMed ids en específico (obtenidos previamente con ESearch), como por ejemplo: Abstract, Publisher, etc.
@@ -197,7 +201,7 @@ Al igual que en la utilidad ESummary, podemos entregar una lista de PubMed ids p
 
 ``retmode``
 
-El formato en que vendrá la response de la API. Por ejemplo: ``json`` o ``xml``.
+El formato en que vendrá la response de la API. Por ejemplo: ``text`` o ``xml``.
 
 ``rettype``
 
