@@ -51,7 +51,9 @@ El formato en que vendrá la response de la API. Por ejemplo: ``json`` o ``xml``
 
 Si deseo buscar las PubMed ids del término ``school of medicine``, obtenerla en formato JSON y conseguir sólo 10 resultados, la llamada se vería de esta manera:
 
-``https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esearch.fcgi?db=pubmed&retmode=json&retmax=10&term=school+of+medicine``
+```
+https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esearch.fcgi?db=pubmed&retmode=json&retmax=10&term=school+of+medicine
+```
 
 ### ¿Qué data traería esta llamada?
 
@@ -104,7 +106,9 @@ Lista de PubMed ids por los que se desea obtener la metadata. Si se desea buscar
 
 Si deseo obtener la metadata de las 10 PubMed ids que obtuve anteriormente bajo el término ``school of medicine``, la llamada se vería de la siguiente manera:
 
-``https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esummary.fcgi?db=pubmed&retmode=json&id=33036065,33036063,33036062,33036061,33036049,33036036,33036029,33036025,33036005,33035998``
+```
+https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esummary.fcgi?db=pubmed&retmode=json&id=33036065,33036063,33036062,33036061,33036049,33036036,33036029,33036025,33036005,33035998
+```
 
 ### ¿Qué data traería esta llamada?
 
