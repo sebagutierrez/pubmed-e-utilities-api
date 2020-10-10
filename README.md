@@ -55,7 +55,7 @@ Si deseo buscar las PubMed ids del término ``school of medicine``, obtenerla en
 https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esearch.fcgi?db=pubmed&retmode=json&retmax=10&term=school+of+medicine
 ```
 
-### ¿Qué data traería esta llamada?
+### ¿Qué data retornaría esta llamada?
 
 ```
 {
@@ -110,7 +110,7 @@ Si deseo obtener la metadata de las 10 PubMed ids que obtuve anteriormente bajo 
 https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esummary.fcgi?db=pubmed&retmode=json&id=33036065,33036063,33036062,33036061,33036049,33036036,33036029,33036025,33036005,33035998
 ```
 
-### ¿Qué data traería esta llamada?
+### ¿Qué data retornaría esta llamada?
 
 ```
 {
@@ -214,6 +214,48 @@ https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=pubmed&rettype=medl
 **Nota**:
 Recomiendo el uso de ``rettype=medline`` para este caso. Entrega la data de una manera más ordenada y fácil para encontrar el campo que se necesite.
 
+### ¿Qué data retornaría esta llamada?
+
+```
+PMID- 33036065
+OWN - NLM
+STAT- Publisher
+LR  - 20201009
+IS  - 1097-0142 (Electronic)
+IS  - 0008-543X (Linking)
+DP  - 2020 Oct 9
+TI  - Outcomes of Black men with prostate cancer treated with radiation therapy in the 
+      Veterans Health Administration.
+LID - 10.1002/cncr.33224 [doi]
+AB  - BACKGROUND: Population-based studies demonstrate that Black men in the United
+      States have an increased risk of death from prostate cancer. Determinants of
+      racial disparities are multifactorial, including socioeconomic and biologic
+      factors. METHODS: The authors conducted a pooled analysis of patients derived
+      from 152 centers within the Veterans Health Administration. The cohort included
+      men who had nonmetastatic prostate diagnosed between 2001 and 2015 and received
+      definitive radiation therapy. The primary endpoint was prostate cancer-specific
+      mortality (PCSM). Secondary endpoints included all-cause mortality (ACM) and the 
+      time from a prostate-specific antigen level >/=4 ng/mL to biopsy and radiation
+      therapy. A Cox regression model was performed to adjust for differences between
+      clinical parameters. RESULTS: Among the 31,131 patients included in the cohort,
+      9584 (30.8%) were Black. The 10-year cumulative incidence of death from prostate 
+      cancer was lower in Black men compared with White men (4.0% vs 4.8%; P = .004).
+      In a competing risk model, Black race was associated with a decreased risk of
+      PCSM (subdistribution hazard ratio, 0.79; 95% CI, 0.69-0.92; P = .002).
+      Similarly, the 10-year cumulative incidence of death from any cause was lower in 
+      Black men (27.6% vs 31.8%; P < .001). In multivariable analysis, Black men had a 
+      10% decreased risk of ACM (hazard ratio, 0.90; 95% CI, 0.85-0.95; P < .001).
+      CONCLUSIONS: The current results indicate relatively lower PCSM and ACM among
+      Black men who were included in a large Veterans Health Administration cohort and 
+      received radiation therapy as primary treatment for nonmetastatic prostate
+      cancer. There is an ongoing need to continue to understand and mitigate the
+      factors associated with disparities in health care outcomes.
+CI  - (c) 2020 American Cancer Society.
+...
+...
+...
+...
+```
 ## Referencias
 
 [PubMed APIs](https://www.ncbi.nlm.nih.gov/home/develop/api/)  
