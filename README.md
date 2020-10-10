@@ -3,7 +3,7 @@
 ## Entrez Programming Utilities
 
 Las E-Utilities componen una API pública del NCBI que nos permite hacer diversas operaciones como: obtener PubMed ids bajo términos de búsqueda, fetchear
-la metadata más importante de un PubMed id específico, etc.
+la metadata más importante de un PubMed id específico, obtener data relevante sobre algún artículo específico, etc.
 
 ### Importante
 
