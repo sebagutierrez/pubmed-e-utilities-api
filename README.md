@@ -178,6 +178,42 @@ https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esummary.fcgi?db=pubmed&retmode=js
 }
 ```
 
+## EFetch
+
+La utilidad EFetch nos permite obtener información más relevante de uno o más PubMed ids en específico (obtenidos previamente con ESearch), como por ejemplo: Abstract, Publisher, etc.
+
+### Endpoint
+``` 
+https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi
+```
+
+### Parámeteros requeridos
+
+``id``
+
+Al igual que en la utilidad ESummary, podemos entregar una lista de PubMed ids para obtener sus datos relevantes. Recordar separar con una ``,`` cada PubMed id, en caso de que se busque más de uno.
+
+### Parámeteros opcionales
+
+``retmode``
+
+El formato en que vendrá la response de la API. Por ejemplo: ``json`` o ``xml``.
+
+``rettype``
+
+Es el tipo de respuesta. Pueden ser ``medline``, ``abstract`` o ``uilist``.
+
+### Ejemplo de request
+
+Si deseo buscar la data relevante del primer PubMed id que nos retornó la busqueda de ``school of medicine``, la llamada se vería de esta manera:
+
+```
+https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=pubmed&rettype=medline&id=33036065
+```
+
+**Nota**:
+Recomiendo el uso de ``rettype=medline`` para este caso. Entrega la data de una manera más ordenada y fácil para encontrar el campo que se necesite.
+
 ## Referencias
 
 [PubMed APIs](https://www.ncbi.nlm.nih.gov/home/develop/api/)  
