@@ -12,7 +12,9 @@ realizando la llamada, mientras que en el segundo se debe especificar el email d
 
 **Ejemplo**
 
-``https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esummary.fcgi?db=pubmed&id=32945846&retmode=json&tool=i2-covid-site&email=sebastian@hicapps.cl``
+```
+https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esummary.fcgi?db=pubmed&id=32945846&retmode=json&tool=i2-covid-site&email=sebastian@hicapps.cl
+```
 
 ## ESearch
 
